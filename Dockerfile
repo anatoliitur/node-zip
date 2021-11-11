@@ -4,6 +4,7 @@ FROM node:12
 RUN apt-get update && \
     apt-get install -y zip && \
     apt-get install -y curl && \
+    apt-get install -y gettext-base && \
     apt-get install -y python3-pip
  
 # install jq to parse json within bash scripts
